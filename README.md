@@ -32,7 +32,7 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Jabbirkhan/E-Commerce-Website-using-HTML-and-CSS
+   git clone https://github.com/Jabbirkhan/E-Commerce-Website-using-HTML-and-CSS.git
    ```
 2. Navigate into the project folder:
 
