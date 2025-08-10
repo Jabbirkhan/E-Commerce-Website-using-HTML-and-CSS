@@ -1,0 +1,500 @@
+/* ------------ Global css start ----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --maincolor: blue;
+    --lightblue: #3636f8;
+    --textcolor: black;
+    --stextcolor: #8a8a8a;
+    --bgcolor: black;
+    --radialbgcolor: radial-gradient(#fff, #ffc1c1);
+    --shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    --darkblack: #333;
+    --mediumblack: #555;
+    --lightblack: #777;
+    --white: #fff;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    width: 100%;
+  }
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+  .small-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+  .col-3 {
+    flex-basis: 32%;
+    min-width: 250px;
+  }
+  .col-4 {
+    flex-basis: 24%;
+    min-width: 200px;
+  }
+  /* ------------ Global css end ----------- */
+  
+  /* ------------ Header css start ----------- */
+  .header-hero-section {
+    background: var(--radialbgcolor);
+  }
+  header {
+    margin-bottom: 10px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .logo a {
+    text-decoration: none;
+  }
+  .logo img {
+    width: 125px;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: var(--stextcolor);
+    transition: transform 0.5s ease;
+  }
+  nav ul li a:hover {
+    color: var(--maincolor);
+  }
+  .get-started {
+    padding: 7px 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: 2px solid var(--maincolor);
+    border-radius: 20px;
+    color: var(--stextcolor);
+    margin: 0px 10px;
+    transition: transform 0.5s ease;
+  }
+  .get-started:hover {
+    color: var(--white);
+    background: var(--maincolor);
+  }
+  .active {
+    color: var(--maincolor);
+  }
+  .cart {
+    font-size: 25px;
+    color: var(--stextcolor);
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+  }
+  .cart:hover {
+    color: var(--maincolor);
+  }
+  #menu {
+    font-size: 25px;
+    color: var(--stextcolor);
+    display: none;
+  }
+  /* ------------ Header css end ----------- */
+
+ /*------------- Detail page css atart ---------- */
+.details{
+    margin: 20px 0px;
+  }
+  .detail-col-1{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .detail-col-1 .main-image {
+    width: 100%;
+    height: 320px;
+    background: var(--lightbg);
+    object-fit: contain;
+  }
+  .gallery-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gallery img {
+    width: 100%;
+    height: 70px;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .outline{
+    outline: 1px solid black;
+  }
+  
+  .detail-col-2{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .detail-col-2 h4 {
+    font-size: 1.4rem;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  .detail-col-2 h1 {
+    font-size: 2.4rem;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--black);
+    margin: 10px 0px;
+  }
+  .detail-col-2 h3 {
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-weight: 600;
+    color: var(--black);
+  }
+  .stars {
+    margin: 10px 0px;
+  }
+  .stars i {
+    font-size: 20px;
+    color: var(--lightblue);
+  }
+  .detail-col-2 p {
+    font-size: 1.4rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--black);
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .size-selector {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+  }
+  .size-selector select {
+    padding: 10px;
+    width: 130px;
+    border: 1px solid var(--lightblue);
+    outline: none;
+    margin-right: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .counting input[type="number"] {
+    padding: 10px;
+    width: 70px;
+    border: 1px solid var(--lightblue);
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-cart {
+    width: 100%;
+    color: var(--white);
+    background: var(--maincolor);
+    font-size: 1.8rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 10px;
+  }
+  .btn-cart:hover {
+    background: var(--lightblue);
+    cursor: pointer;
+  }
+  .btn-buy {
+    width: 100%;
+    color: var(--black);
+    border: 1px solid var(--lightblue);
+    font-size: 1.8rem;
+    font-weight: 500;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+  .btn-buy:hover {
+    color: var(--white);
+    background: var(--maincolor);
+    cursor: pointer;
+  }
+  /*------------- Detail page css end ---------- */
+
+
+  /*----------- Footer css start --------- */
+footer {
+    background: black;
+    padding: 40px;
+    color: #8a8a8a;
+  }
+  
+  .footer-col-1 {
+    flex-basis: 30%;
+    padding: 20px;
+  }
+  .footer-col-1 h4 {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .footer-col-1 p {
+    font-size: 1.4rem;
+    margin: 10px 0px;
+  }
+  .store {
+    width: 150px;
+    margin: 20px 0px;
+    cursor: pointer;
+  }
+  .store1 {
+    margin-right: 10px;
+  }
+  
+  .footer-col-2 {
+    flex: 1;
+    padding: 20px;
+  }
+  .footer-col-2 img {
+    width: 200px;
+  }
+  .footer-col-2 p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 10px 0px;
+    text-align: justify;
+  }
+  
+  .footer-col-3 {
+    flex-basis: 15%;
+    padding: 20px;
+  }
+  .footer-col-3 h4 {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .footer-col-3 ul li {
+    list-style-type: none;
+  }
+  .footer-col-3 ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #8a8a8a;
+    font-weight: normal;
+    margin: 10px 0px;
+    line-height: 20px;
+  }
+  
+  .footer-col-4 {
+    flex-basis: 15%;
+    padding: 20px;
+  }
+  .footer-col-4 h4 {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .footer-col-4 ul li {
+    list-style-type: none;
+  }
+  .footer-col-4 ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #8a8a8a;
+    font-weight: normal;
+    margin: 10px 0px;
+    line-height: 20px;
+  }
+  
+  .up-arrow {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer-col-5 {
+    flex-basis: 5%;
+  }
+  .footer-col-5 ul li {
+    list-style-type: none;
+  }
+  .footer-col-5 ul li a {
+    text-decoration: none;
+  }
+  .footer-col-5 #up {
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: transform 0.5s ease;
+  }
+  .footer-col-5 #up:hover {
+    background: var(--white);
+    color: var(--blue);
+    cursor: pointer;
+  }
+  
+  footer hr {
+    width: 100%;
+    height: 2px;
+    color: var(--white);
+    margin: 20px 0px;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  /*------------- Footer css end ---------- */
+
+
+
+
+  /* ------------ Media query for navbar start ----------- */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background: #ff8080;
+    overflow: hidden;
+    transition: max-height 1s ease;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+  nav ul li a {
+    color: var(--white);
+    transition: transform 0.5s ease;
+  }
+  nav ul li a:hover {
+    color: var(--maincolor);
+  }
+  .get-started{
+    color: var(--white);
+    margin-right: 0px;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* ------------ Media query for navbar end ----------- */
+
+
+
+/* ------------ Media query for responsive start ----------- */
+@media only screen and (max-width: 600px) and (min-width: 360px) {
+  html {
+    font-size: 8px;
+  }
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+    flex-basis: 100%;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+  .col-2 {
+    flex-basis: 100%;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+  .col-2 {
+    flex-basis: 50%;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .col-2 {
+    flex-basis: 50%;
+  }
+}
+
+/* ------------ Media query for responsive end ----------- */

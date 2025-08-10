@@ -1,0 +1,663 @@
+/* ------------ Global css start ----------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --maincolor: blue;
+  --lightblue: #3636f8;
+  --textcolor: black;
+  --stextcolor: #8a8a8a;
+  --bgcolor: black;
+  --radialbgcolor: radial-gradient(#fff, #ffc1c1);
+  --shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  --darkblack: #333;
+  --mediumblack: #555;
+  --lightblack: #777;
+  --white: #fff;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+.small-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col-2 {
+  flex-basis: 50%;
+  /* min-width: 250px; */
+}
+.col-3 {
+  flex-basis: 32%;
+  /* min-width: 250px; */
+}
+.col-4 {
+  flex-basis: 24%;
+  /* min-width: 200px; */
+}
+/* ------------ Global css end ----------- */
+
+/* ------------ Header css start ----------- */
+.header-hero-section {
+  background: var(--radialbgcolor);
+}
+header {
+  margin-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo img {
+  width: 125px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: var(--stextcolor);
+  transition: transform 0.5s ease;
+}
+nav ul li a:hover {
+  color: var(--maincolor);
+}
+.get-started {
+  padding: 7px 15px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 2px solid var(--maincolor);
+  border-radius: 20px;
+  color: var(--stextcolor);
+  margin: 0px 10px;
+  transition: transform 0.5s ease;
+}
+.get-started:hover {
+  color: var(--white);
+  background: var(--maincolor);
+}
+.active {
+  color: var(--maincolor);
+}
+.cart {
+  font-size: 25px;
+  color: var(--stextcolor);
+  margin-right: 20px;
+  transition: transform 0.5s ease;
+}
+.cart:hover {
+  color: var(--maincolor);
+}
+#menu {
+  font-size: 25px;
+  color: var(--stextcolor);
+  display: none;
+}
+/* ------------ Header css end ----------- */
+
+/* ------------ Hero css start ----------- */
+.hero-section {
+  margin: 10px 0px;
+}
+.hero {
+  padding: 20px;
+  margin: 20px 0px;
+}
+.hero h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--textcolor);
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--darkblack);
+  text-align: left;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.exp-btn {
+  margin: 40px 0px;
+}
+.exp-btn .btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: white;
+  background: var(--maincolor);
+  padding: 8px 35px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.exp-btn .btn:hover {
+  background: var(--lightblue);
+}
+.exp-btn .btn i {
+  font-size: 1.4rem;
+}
+.hero img {
+  max-width: 100%;
+  padding: 20px 0px;
+}
+/* ------------ Hero css end ----------- */
+
+/* ------------ Category css start ----------- */
+.category-section {
+  margin: 70px 0px;
+}
+.category {
+  padding: 10px;
+  margin: 20px 0px;
+}
+.category img {
+  width: 100%;
+}
+/* ------------ Category css end ----------- */
+
+/* ------------ Feature products css start ----------- */
+.feature-products {
+  margin: 10px 0px;
+}
+.title {
+  text-align: center;
+  margin: 70px 0px;
+  font-size: 2.8rem;
+  line-height: 60px;
+  color: var(--textcolor);
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--maincolor);
+}
+.card {
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  outline: 1px solid var(--lightblack);
+}
+.card a {
+  text-decoration: none;
+}
+.card a img {
+  width: 100%;
+  border-radius: 10px;
+  border-bottom: 1px solid var(--lightblack);
+}
+.card h4 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: black;
+  margin: 5px 0px;
+  transition: transform 0.5s ease;
+}
+.card h4:hover {
+  color: var(--lightblue);
+}
+.price {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black);
+  margin: 5px 0px;
+  width: fit-content;
+}
+.cart-btn{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border: 1px solid #00b7ff;
+  background: #00b7ff;
+  transition: transform 0.5s ease;
+}
+.cart-btn:hover {
+  background: #03a3e2;
+}
+/* ------------ Feature products css end ----------- */
+
+/* ------------ Offer css start ----------- */
+.offers {
+  background: var(--radialbgcolor);
+  margin: 100px 0px;
+}
+.offer-img-div{
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer-img-div img {
+  width: 100%;
+  padding: 30px 0px;
+}
+.offer-content-div{
+  padding: 10px;
+}
+.offer-sub-title {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: var(--black);
+  margin: 40px 0px;
+  cursor: pointer;
+}
+.offer-title {
+  font-size: 3.6rem;
+  font-weight: bolder;
+  color: var(--black);
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.offer-context {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--gray);
+  margin: 10px 0px;
+  line-height: 20px;
+  /* width: 70%; */
+  text-align: left;
+}
+/* ------------ Offer css end ----------- */
+
+/* ------------ Testimonial css start ----------- */
+.testimonials {
+  margin: 100px 0px;
+}
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f0f0f0;
+  padding: 20px;
+  margin: 20px 5px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.testimonial:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.testimonial i {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  color: var(--lightblue);
+}
+.testimonial p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 500;
+  color: var(--mediumblack);
+  padding: 10px;
+}
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+}
+.testimonial-rating i {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: var(--lightblue);
+  padding: 5px;
+}
+.testimonial img {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+.testimonial h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--black);
+  margin: 10px 0px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+.testimonial h3:hover {
+  color: var(--lightblue);
+}
+/* ------------ Testimonial css end ----------- */
+
+/* ------------ Brand css start ----------- */
+.brands {
+  margin: 100px 0px;
+}
+.col-5 {
+  flex-basis: 19%;
+}
+.brand {
+  margin: 20px 0px;
+}
+.brand img {
+  width: 100%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.brand img:hover {
+  filter: grayscale(0%);
+}
+/* ------------ Brand css end ----------- */
+
+/*----------- Footer css start --------- */
+footer {
+  background: black;
+  padding: 40px;
+  color: #8a8a8a;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+  padding: 20px;
+}
+.footer-col-1 h4 {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.footer-col-1 p {
+  font-size: 1.4rem;
+  margin: 10px 0px;
+}
+.store {
+  width: 150px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.store1 {
+  margin-right: 10px;
+}
+
+.footer-col-2 {
+  flex: 1;
+  padding: 20px;
+}
+.footer-col-2 img {
+  width: 150px;
+}
+.footer-col-2 p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+.footer-col-3 {
+  flex-basis: 15%;
+  padding: 20px;
+}
+.footer-col-3 h4 {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-col-3 ul li {
+  list-style-type: none;
+}
+.footer-col-3 ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #8a8a8a;
+  font-weight: normal;
+  margin: 10px 0px;
+  line-height: 20px;
+}
+
+.footer-col-4 {
+  flex-basis: 15%;
+  padding: 20px;
+}
+.footer-col-4 h4 {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer-col-4 ul li {
+  list-style-type: none;
+}
+.footer-col-4 ul li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #8a8a8a;
+  font-weight: normal;
+  margin: 10px 0px;
+  line-height: 20px;
+}
+
+.up-arrow {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-col-5 {
+  flex-basis: 5%;
+}
+.footer-col-5 ul li {
+  list-style-type: none;
+}
+.footer-col-5 ul li a {
+  text-decoration: none;
+}
+.footer-col-5 #up {
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+.footer-col-5 #up:hover {
+  background: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+footer hr {
+  width: 100%;
+  height: 2px;
+  color: var(--white);
+  margin: 20px 0px;
+}
+.copyright {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+/*------------- Footer css end ---------- */
+
+/* ------------ Media query for navbar start ----------- */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background: #ff8080;
+    overflow: hidden;
+    transition: max-height 1s ease;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+  }
+  nav ul li a {
+    color: var(--white);
+    transition: transform 0.5s ease;
+  }
+  nav ul li a:hover {
+    color: var(--maincolor);
+  }
+  .get-started{
+    color: var(--white);
+    margin-right: 0px;
+  }
+  #menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* ------------ Media query for navbar end ----------- */
+
+
+/* ------------ Media query for responsive start ----------- */
+
+@media only screen and (max-width: 600px) and (min-width: 260px) {
+  html {
+    font-size: 8px;
+  }
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+    flex-basis: 100%;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    flex-basis: 100%;
+  }
+  .brand-row{
+    text-align: center;
+  }
+  .brand img {
+    width: 50%;
+  }
+  /* Fix for small screens */
+  .container {
+    padding: 0 10px;
+  }
+  .small-container {
+    padding: 0 10px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+  .category-row,
+  .testimonial-row,
+  .feature-row{
+    justify-content: flex-start;
+  }
+  .col-3 {
+    flex-basis: 48%;
+  }
+  .col-4 {
+    flex-basis: 48%;
+  }
+  .offer-img-div img {
+    width: 70%;
+  }
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3,
+  .footer-col-4,
+  .footer-col-5 {
+    flex-basis: 100%;
+  }
+  .brand-row{
+    text-align: center;
+  }
+  .brand img {
+    width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) {
+  html {
+    font-size: 10px;
+  }
+  .col-2 {
+    flex-basis: 50%;
+  }
+  .col-3 {
+    flex-basis: 32%;
+  }
+  .col-4 {
+    flex-basis: 23%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  html {
+    font-size: 9px;
+  }
+  .col-2 {
+    flex-basis: 100%;
+  }
+}
+
+/* ------------ Media query for responsive end ----------- */
